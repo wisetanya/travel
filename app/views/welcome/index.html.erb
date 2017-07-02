@@ -1,0 +1,16 @@
+<h1>Welcome#index</h1>
+<p>Find me in app/views/welcome/index.html.erb</p>
+
+<%= @homeland %>
+
+<ul>
+	<% @countries.each do |country| %>
+		<li><%= country %></li>
+	<% end %>
+</ul>
+
+<%= image_tag "finland-1.jpg", alt: "Finland",
+															id: "Finland",
+															class: "country",
+													 		height: 300,
+													 		width: 600 %>
