@@ -13,8 +13,13 @@
 															id: "Finland",
 															class: "country",
 													 		height: 300,
-													 		width: 600 %>
+													 		width: 600,
+													 		class: "img-responsive" %>
 
 <% @country_img.each do |pic| %>
 	<p><%= image_tag pic, width: 400, style: 'border-bottom: 25px' %></p>
 <% end %>
+
+<br>
+<%= link_to "About", params_path %>
+</br>

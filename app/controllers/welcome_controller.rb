@@ -6,7 +6,14 @@ class WelcomeController < ApplicationController
   end
 
   def about_params
-  	@color = params[:color]
+if params[:color] == nil
+	@color = 'orange'
+else
+	@color = params[:color]
+end
+  	
   	@size = params[:shoe_size]
   end
 end
+
+#can also be written as "params[:color] == nil ? @color = 'orange' : @color = params[:color]"
